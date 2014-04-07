@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-
+ruby '2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.4'
+gem 'rails', '4.0.1'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -16,7 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -27,10 +27,21 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+gem 'activerecord-tableless'
+gem 'compass-rails', '~> 1.1.2'
+gem 'figaro'
+gem 'gibbon'
+gem 'google_drive'
+gem 'high_voltage'
+gem 'simple_form'
+gem 'zurb-foundation'
+
+group :development do
+gem 'better_errors'
+gem 'quiet_assets'
+gem 'rails_layout'
 end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
